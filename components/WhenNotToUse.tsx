@@ -65,11 +65,11 @@ const WhenNotToUse = () => {
                                     <span className="font-bold uppercase tracking-widest text-sm">Rule of Thumb</span>
                                 </div>
                                 <h3 className="text-2xl md:text-3xl font-bold text-white leading-tight mb-10">
-                                    Use TiDB X only when the cost of <span className="italic text-brand-red/80">not evolving</span> exceeds the complexity of distributed infrastructure.
+                                    When growth demands evolution, <span className="text-brand-red">TiDB X is the answer.</span>
                                 </h3>
                                 
-                                <a href="#" className="inline-flex items-center text-gray-400 hover:text-white transition-colors mt-auto group/link">
-                                    <span className="border-b border-transparent group-hover/link:border-brand-red transition-all">Read the Architecture Decision Record</span>
+                                <a href="https://www.pingcap.com/blog/tidb-origins-architecture/" className="inline-flex items-center text-gray-400 hover:text-white transition-colors mt-auto group/link">
+                                    <span className="border-b border-transparent group-hover/link:border-brand-red transition-all">Read the Architecture Guide</span>
                                     <ArrowRight className="w-4 h-4 ml-2 transform group-hover/link:translate-x-1 transition-transform" />
                                 </a>
                             </div>
