@@ -2,8 +2,6 @@
 
 A high-performance, dark-themed landing page designed to showcase the value of TiDB X for AI Agent architectures. This project highlights how TiDB X solves critical system foundation challenges for scaling AI agents, such as schema agility, isolation, and unified scaling.
 
-![TiDB X Banner](https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6)
-
 ## 🚀 Overview
 
 AI Agents represent a new class of application workload that differs significantly from traditional web apps. They are long-running, stateful, and require rapid schema evolution. This landing page articulates why traditional databases fail these workloads and how TiDB X provides the necessary system foundations.
