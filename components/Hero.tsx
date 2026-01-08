@@ -49,7 +49,7 @@ const Hero: React.FC = () => {
               </div>
 
               <p className="text-sm text-gray-500 font-medium uppercase tracking-wide pt-2 flex items-center gap-2">
-                Learn how <a href="https://www.pingcap.com/case-study/manus-agentic-ai-database-tidb/" className="text-white font-bold border-b border-brand-red hover:text-brand-red transition-colors">Manus</a> scaled from MVP to $100M+
+                Learn how <a href="https://www.pingcap.com/case-study/manus-agentic-ai-database-tidb/" target="_blank" rel="noopener noreferrer" className="text-white font-bold border-b border-brand-red hover:text-brand-red transition-colors">Manus</a> scaled from MVP to $100M+
               </p>
             </div>
           </div>
@@ -57,7 +57,7 @@ const Hero: React.FC = () => {
           <div className="animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
             <div className="flex flex-col sm:flex-row gap-6 pt-4">
               {/* Primary Button with Border Beam */}
-              <a href="https://tidbcloud.com/" className="group relative inline-flex items-center justify-center overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-brand-red focus:ring-offset-2 focus:ring-offset-black">
+              <a href="https://tidbcloud.com/" target="_blank" rel="noopener noreferrer" className="group relative inline-flex items-center justify-center overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-brand-red focus:ring-offset-2 focus:ring-offset-black">
                 <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#FF0033_0%,#000000_50%,#FF0033_100%)] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-white px-8 py-4 text-base font-bold text-black backdrop-blur-3xl transition-all group-hover:bg-gray-100">
                   Deploy Your Agent Database

@@ -68,7 +68,7 @@ const WhenNotToUse = () => {
                                     When growth demands evolution, <span className="text-brand-red">TiDB X is the answer.</span>
                                 </h3>
                                 
-                                <a href="https://www.pingcap.com/blog/tidbx-origins-architecture/" className="inline-flex items-center text-gray-400 hover:text-white transition-colors mt-auto group/link">
+                                <a href="https://www.pingcap.com/blog/tidbx-origins-architecture/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-gray-400 hover:text-white transition-colors mt-auto group/link">
                                     <span className="border-b border-transparent group-hover/link:border-brand-red transition-all">Read the Architecture Guide</span>
                                     <ArrowRight className="w-4 h-4 ml-2 transform group-hover/link:translate-x-1 transition-transform" />
                                 </a>

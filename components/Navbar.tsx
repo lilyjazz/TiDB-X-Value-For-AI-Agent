@@ -29,7 +29,12 @@ const Navbar: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <div className="flex items-center space-x-12">
-          <a href="https://www.pingcap.com/" className="cursor-pointer">
+          <a 
+            href="https://www.pingcap.com/" 
+            className="cursor-pointer"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <TiDBLogo />
           </a>
           <div className="hidden md:flex space-x-8">
@@ -37,6 +42,8 @@ const Navbar: React.FC = () => {
               <a
                 key={link.name}
                 href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
               >
                 {link.name}
@@ -69,12 +76,23 @@ const Navbar: React.FC = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-brand-card border-b border-brand-border p-6 flex flex-col space-y-4">
           {navLinks.map((link) => (
-            <a key={link.name} href={link.href} className="text-white text-lg font-medium">
+            <a 
+              key={link.name} 
+              href={link.href} 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white text-lg font-medium"
+            >
               {link.name}
             </a>
           ))}
           <div className="h-px bg-brand-border my-2" />
-          <a href="https://tidbcloud.com/" target="_blank" rel="noopener noreferrer" className="bg-brand-red text-white py-3 rounded text-center font-bold">
+          <a 
+            href="https://tidbcloud.com/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="bg-brand-red text-white py-3 rounded text-center font-bold"
+          >
             Start for Free
           </a>
         </div>
