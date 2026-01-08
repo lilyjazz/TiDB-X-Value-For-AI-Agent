@@ -3,7 +3,7 @@ import { ScrollReveal } from './ScrollReveal';
 
 const Trusted = () => {
   const companies = [
-    "Manus", "ACME AI", "NexusBot", "GraphCore", "DataFlow", "StreamLine", "AutoAgent", "TensorScale", "DeepMindset", "NeuralNet", "Synapse"
+    "Manus", "Dify", "Rengage", "TOPRISM", "CrowdSnap", "PLAID", "Catalyst", "OMNICONVERT"
   ];
 
   return (

@@ -47,7 +47,9 @@ const Navbar: React.FC = () => {
 
         <div className="hidden md:flex items-center space-x-6">
           <a
-            href="https://tidbcloud.com"
+            href="https://tidbcloud.com/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group flex items-center bg-white text-black px-5 py-2.5 rounded text-sm font-bold hover:bg-brand-red hover:text-white transition-all duration-300"
           >
             Start for Free
@@ -72,7 +74,7 @@ const Navbar: React.FC = () => {
             </a>
           ))}
           <div className="h-px bg-brand-border my-2" />
-          <a href="https://tidbcloud.com/" className="bg-brand-red text-white py-3 rounded text-center font-bold">
+          <a href="https://tidbcloud.com/" target="_blank" rel="noopener noreferrer" className="bg-brand-red text-white py-3 rounded text-center font-bold">
             Start for Free
           </a>
         </div>

@@ -23,14 +23,3 @@ export const TiDBLogo = () => (
     <text x="42" y="28" fill="white" fontSize="22" fontWeight="bold" fontFamily="Inter, sans-serif" letterSpacing="-0.5">TiDB <tspan fill="#FF0033">X</tspan></text>
   </svg>
 );
-
-export const CubeGrid = () => (
-  <svg width="100%" height="100%" viewBox="0 0 400 400" className="opacity-30">
-    <defs>
-      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#333" strokeWidth="1"/>
-      </pattern>
-    </defs>
-    <rect width="100%" height="100%" fill="url(#grid)" />
-  </svg>
-);

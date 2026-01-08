@@ -49,7 +49,7 @@ const Hero: React.FC = () => {
               </div>
 
               <p className="text-sm text-gray-500 font-medium uppercase tracking-wide pt-2 flex items-center gap-2">
-                Learn how <span className="text-white font-bold border-b border-brand-red">Manus</span> scaled from MVP to $100M+
+                Learn how <a href="https://www.pingcap.com/case-study/manus-agentic-ai-database-tidb/" className="text-white font-bold border-b border-brand-red hover:text-brand-red transition-colors">Manus</a> scaled from MVP to $100M+
               </p>
             </div>
           </div>
