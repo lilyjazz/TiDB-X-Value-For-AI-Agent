@@ -23,15 +23,12 @@ const App: React.FC = () => {
               <div className="max-w-4xl mx-auto text-center px-6 relative z-10">
                   <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Ready to build intelligent agents?</h2>
                   <p className="text-white/80 text-xl mb-10 max-w-2xl mx-auto">
-                      Start with 5GB of free storage. No credit card required. Scale to petabytes when you are ready.
+                      Start with $300 of free credits.
                   </p>
-                  <div className="flex flex-col sm:flex-row justify-center gap-4">
-                      <button className="bg-black text-white px-8 py-4 rounded font-bold hover:bg-gray-900 transition-all">
-                          Get Started for Free
-                      </button>
-                      <button className="bg-white text-black px-8 py-4 rounded font-bold hover:bg-gray-100 transition-all">
-                          Contact Sales
-                      </button>
+                  <div className="flex justify-center">
+                      <a href="https://tidbcloud.com/" className="bg-black text-white px-8 py-4 rounded font-bold hover:bg-gray-900 transition-all cursor-pointer">
+                          Try TiDB X for Free
+                      </a>
                   </div>
               </div>
             </ScrollReveal>

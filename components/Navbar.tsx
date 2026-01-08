@@ -15,10 +15,10 @@ const Navbar: React.FC = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Product', href: 'https://www.pingcap.com/tidb/' },
-    { name: 'Solutions', href: '#' },
-    { name: 'Pricing', href: '#' },
-    { name: 'Docs', href: '#' },
+    { name: 'Product', href: 'https://www.pingcap.com/tidb/cloud/' },
+    { name: 'Solutions', href: 'https://www.pingcap.com/customers/' },
+    { name: 'Pricing', href: 'https://www.pingcap.com/pricing/' },
+    { name: 'Docs', href: 'https://docs.pingcap.com/' },
   ];
 
   return (
@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <div className="flex items-center space-x-12">
-          <a href="/" className="cursor-pointer">
+          <a href="https://www.pingcap.com/" className="cursor-pointer">
             <TiDBLogo />
           </a>
           <div className="hidden md:flex space-x-8">
@@ -46,11 +46,8 @@ const Navbar: React.FC = () => {
         </div>
 
         <div className="hidden md:flex items-center space-x-6">
-          <a href="#" className="text-sm font-medium text-white hover:text-brand-red transition-colors">
-            Sign In
-          </a>
           <a
-            href="#"
+            href="https://tidbcloud.com"
             className="group flex items-center bg-white text-black px-5 py-2.5 rounded text-sm font-bold hover:bg-brand-red hover:text-white transition-all duration-300"
           >
             Start for Free
@@ -75,10 +72,7 @@ const Navbar: React.FC = () => {
             </a>
           ))}
           <div className="h-px bg-brand-border my-2" />
-          <a href="#" className="text-white text-lg font-medium">
-            Sign In
-          </a>
-          <a href="#" className="bg-brand-red text-white py-3 rounded text-center font-bold">
+          <a href="https://tidbcloud.com/" className="bg-brand-red text-white py-3 rounded text-center font-bold">
             Start for Free
           </a>
         </div>

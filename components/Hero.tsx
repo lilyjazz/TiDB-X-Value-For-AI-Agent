@@ -21,9 +21,9 @@ const Hero: React.FC = () => {
         {/* Left Column: Copy */}
         <div className="space-y-8">
           <div className="animate-fade-in-up w-auto" style={{ animationDelay: '0.1s' }}>
-            <div className="inline-flex items-center space-x-2 bg-white/5 border border-white/10 backdrop-blur-sm rounded-full px-3 py-1">
-              <span className="w-2 h-2 rounded-full bg-brand-red animate-pulse"></span>
-              <span className="text-xs font-semibold tracking-wider uppercase text-gray-200">
+            <div className="inline-flex items-center space-x-2 bg-white/5 border border-white/10 backdrop-blur-sm rounded-full px-3 py-1 transition-colors duration-300 hover:bg-brand-red hover:border-brand-red cursor-pointer group">
+              <span className="w-2 h-2 rounded-full bg-brand-red animate-pulse group-hover:bg-white transition-colors"></span>
+              <span className="text-xs font-semibold tracking-wider uppercase text-gray-200 group-hover:text-white transition-colors">
                 Insight: The Reality of AI Scale
               </span>
             </div>
@@ -57,18 +57,13 @@ const Hero: React.FC = () => {
           <div className="animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
             <div className="flex flex-col sm:flex-row gap-6 pt-4">
               {/* Primary Button with Border Beam */}
-              <button className="group relative inline-flex items-center justify-center overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-brand-red focus:ring-offset-2 focus:ring-offset-black">
+              <a href="https://tidbcloud.com/" className="group relative inline-flex items-center justify-center overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-brand-red focus:ring-offset-2 focus:ring-offset-black">
                 <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#FF0033_0%,#000000_50%,#FF0033_100%)] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-white px-8 py-4 text-base font-bold text-black backdrop-blur-3xl transition-all group-hover:bg-gray-100">
                   Deploy Your Agent Database
                   <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
                 </span>
-              </button>
-
-              {/* Secondary Button */}
-              <button className="group inline-flex items-center justify-center px-8 py-4 rounded-full border border-white/20 bg-white/5 backdrop-blur-sm text-white font-medium text-base transition-all hover:bg-white/10 hover:border-white">
-                Read the Architecture Guide
-              </button>
+              </a>
             </div>
           </div>
 
