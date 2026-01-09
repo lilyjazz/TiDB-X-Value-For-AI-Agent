@@ -233,15 +233,18 @@ const ScenarioCard = ({ scenario }: { scenario: typeof scenarios[0] }) => {
         </div>
 
         {/* BACK FACE: SOLUTION (WITH TIDB X) */}
-        <div className="col-start-1 row-start-1 h-full w-full [backface-visibility:hidden] [transform:rotateY(180deg)] rounded-2xl border border-brand-red/40 bg-gradient-to-br from-[#120505] to-[#000000] p-6 md:p-8 flex flex-col shadow-[0_0_30px_rgba(255,0,51,0.15)] overflow-hidden">
+        <div className="col-start-1 row-start-1 h-full w-full [backface-visibility:hidden] [transform:rotateY(180deg)] rounded-2xl border border-white/10 bg-[#0B0B0B] p-6 md:p-8 flex flex-col shadow-2xl overflow-hidden relative">
            
+           {/* Elegant top accent */}
+           <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-brand-red to-transparent opacity-70"></div>
+
            <div className="flex items-center space-x-3 mb-6">
-             <div className="w-8 h-8 rounded-lg bg-brand-red flex items-center justify-center shadow-lg shadow-brand-red/20">
-                <Icon className="w-4 h-4 text-white" />
+             <div className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center">
+                <Icon className="w-4 h-4 text-brand-red" />
              </div>
              <div>
                 <h3 className="text-lg font-bold text-white">{scenario.title}</h3>
-                <span className="text-xs text-brand-red font-bold uppercase tracking-wider">Solved with TiDB X</span>
+                <span className="text-xs text-gray-400 font-bold uppercase tracking-wider">Solved with TiDB X</span>
              </div>
            </div>
 
@@ -253,12 +256,12 @@ const ScenarioCard = ({ scenario }: { scenario: typeof scenarios[0] }) => {
            <div className="flex-1">
              <div className="mb-8">
                 <h4 className="text-white font-bold mb-4 flex items-center text-sm uppercase tracking-wide">
-                   <Database className="w-4 h-4 text-brand-red mr-2" />
+                   <Database className="w-4 h-4 text-gray-500 mr-2" />
                    Architecture Shift
                 </h4>
                 <ul className="space-y-3">
                    {scenario.solution.points.map((p, i) => (
-                      <li key={i} className="flex items-start text-sm md:text-base text-gray-200">
+                      <li key={i} className="flex items-start text-sm md:text-base text-gray-300">
                         <CheckCircle2 className="w-5 h-5 text-brand-red mr-3 shrink-0" />
                         {p}
                       </li>
@@ -266,17 +269,17 @@ const ScenarioCard = ({ scenario }: { scenario: typeof scenarios[0] }) => {
                 </ul>
              </div>
 
-             <div className="bg-brand-red/10 border border-brand-red/20 p-4 rounded-xl relative overflow-hidden">
-                <div className="absolute -top-10 -right-10 w-32 h-32 bg-brand-red/20 blur-[40px] rounded-full"></div>
-                <h5 className="text-brand-red text-xs font-bold uppercase tracking-widest mb-2 relative z-10">Key Takeaway</h5>
-                <p className="text-white text-base font-medium leading-relaxed italic relative z-10">
+             {/* Minimalist Takeaway Box */}
+             <div className="pl-4 border-l-2 border-brand-red/60 py-1">
+                <h5 className="text-gray-500 text-[10px] font-bold uppercase tracking-widest mb-1">Key Takeaway</h5>
+                <p className="text-white/90 text-sm md:text-base font-medium leading-relaxed italic">
                    "{scenario.takeaway}"
                 </p>
              </div>
            </div>
            
-           <div className="mt-6 pt-4 text-center">
-             <span className="text-brand-red/60 text-xs tracking-widest uppercase">Value Unlocked</span>
+           <div className="mt-6 pt-4 border-t border-white/5 text-center">
+             <span className="text-gray-600 text-[10px] tracking-[0.2em] uppercase">Value Unlocked</span>
            </div>
         </div>
 
