@@ -294,7 +294,22 @@ const Scenarios = () => {
       <div className="max-w-7xl mx-auto px-6">
         <ScrollReveal>
           <div className="mb-16 text-center">
-            <h4 className="text-brand-red font-mono text-sm mb-4 tracking-widest uppercase">Business Scenarios</h4>
+            
+            {/* Optimized Label Style */}
+            <div className="flex items-center justify-center space-x-4 mb-8">
+               <div className="hidden md:block w-12 h-px bg-gradient-to-r from-transparent to-brand-red/40"></div>
+               <div className="inline-flex items-center space-x-2 px-5 py-2 rounded-full bg-brand-red/5 border border-brand-red/10 backdrop-blur-md shadow-[0_0_15px_-5px_rgba(255,0,51,0.2)] hover:border-brand-red/20 transition-all duration-300">
+                 <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-red opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-red"></span>
+                 </span>
+                 <span className="text-brand-red font-mono text-xs font-bold tracking-[0.2em] uppercase pl-1">
+                    Business Scenarios
+                 </span>
+               </div>
+               <div className="hidden md:block w-12 h-px bg-gradient-to-l from-transparent to-brand-red/40"></div>
+            </div>
+
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
               From "Workaround" to "Native"
             </h2>

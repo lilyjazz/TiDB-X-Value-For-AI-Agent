@@ -7,39 +7,47 @@ const Trusted = () => {
   ];
 
   return (
-    <section className="py-16 border-b border-brand-border bg-black overflow-hidden relative">
+    <section className="py-20 border-y border-white/5 bg-[#050505] overflow-hidden relative group">
+      {/* Subtle background atmosphere - Faint violet glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-brand-violet/5 blur-[120px] pointer-events-none opacity-50"></div>
+
       <ScrollReveal delay="0.1s" width="full">
-        <div className="max-w-7xl mx-auto px-6 text-center mb-12">
-          <p className="text-sm font-semibold text-gray-500 uppercase tracking-widest">
-            Trusted by AI Pioneers
-          </p>
+        <div className="max-w-7xl mx-auto px-6 text-center mb-14 relative z-10">
+          <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm shadow-sm">
+             <span className="w-1.5 h-1.5 rounded-full bg-brand-violet animate-pulse"></span>
+             <p className="text-xs font-bold text-gray-400 uppercase tracking-[0.2em]">
+                Trusted by AI Pioneers
+             </p>
+          </div>
         </div>
       </ScrollReveal>
 
       <ScrollReveal delay="0.2s" width="full">
         <div className="relative w-full overflow-hidden">
-          {/* Gradient Masks */}
-          <div className="absolute top-0 left-0 h-full w-24 md:w-48 bg-gradient-to-r from-black via-black/90 to-transparent z-10 pointer-events-none"></div>
-          <div className="absolute top-0 right-0 h-full w-24 md:w-48 bg-gradient-to-l from-black via-black/90 to-transparent z-10 pointer-events-none"></div>
+          {/* Gradient Masks - seamlessly blending with bg-[#050505] */}
+          <div className="absolute top-0 left-0 h-full w-24 md:w-64 bg-gradient-to-r from-[#050505] via-[#050505]/90 to-transparent z-20 pointer-events-none"></div>
+          <div className="absolute top-0 right-0 h-full w-24 md:w-64 bg-gradient-to-l from-[#050505] via-[#050505]/90 to-transparent z-20 pointer-events-none"></div>
 
           {/* Marquee Container */}
-          <div className="flex w-max animate-marquee hover:[animation-play-state:paused]">
-            {/* First Set - Note padding-right to match space-x gap */}
-            <div className="flex items-center space-x-16 md:space-x-24 pr-16 md:pr-24 shrink-0">
-              {companies.map((company, index) => (
-                <span key={`a-${index}`} className={`text-xl md:text-2xl font-bold font-sans transition-colors cursor-default whitespace-nowrap ${company === 'Manus' ? 'text-white' : 'text-gray-600 hover:text-gray-300'}`}>
-                  {company}
-                </span>
-              ))}
-            </div>
-            {/* Duplicate Set */}
-            <div className="flex items-center space-x-16 md:space-x-24 pr-16 md:pr-24 shrink-0">
-              {companies.map((company, index) => (
-                <span key={`b-${index}`} className={`text-xl md:text-2xl font-bold font-sans transition-colors cursor-default whitespace-nowrap ${company === 'Manus' ? 'text-white' : 'text-gray-600 hover:text-gray-300'}`}>
-                  {company}
-                </span>
-              ))}
-            </div>
+          <div className="flex w-max animate-marquee hover:[animation-play-state:paused] items-center py-4">
+            {/* Loop twice for seamless infinite scroll */}
+            {[0, 1].map((i) => (
+              <div key={i} className="flex items-center space-x-20 md:space-x-32 pr-20 md:pr-32 shrink-0">
+                {companies.map((company, index) => (
+                  <span 
+                    key={`${i}-${index}`} 
+                    className={`text-2xl md:text-4xl font-bold tracking-tight transition-all duration-500 cursor-default select-none
+                      ${company === 'Manus' 
+                        ? 'text-transparent bg-clip-text bg-gradient-to-br from-white to-gray-400 drop-shadow-[0_0_20px_rgba(255,255,255,0.25)] scale-105' 
+                        : 'text-[#333] hover:text-[#888] hover:scale-105'
+                      }
+                    `}
+                  >
+                    {company}
+                  </span>
+                ))}
+              </div>
+            ))}
           </div>
         </div>
       </ScrollReveal>
